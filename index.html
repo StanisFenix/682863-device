@@ -347,18 +347,49 @@
                         Заодно, вы сможете поверить работоспособность покупки. Всякое бывает
                     </p>
                 </div>
-                    <a class="button" href="#">
-                        Напишите нам
-                    </a>
+
                     <section class="modal modal-map">
                         <h2 class="visually-hidden">
-                            Как до нас добраться
+                            Как до нас добраться.
                         </h2>
                         <img src="img/map.png" width="560" height="222" alt="Адрес магазина «Device» ул. Строителей, 15">
                         <button class="modal-close">
                             x
                         </button>
                     </section>
+
+                    <section class="modal modal-feedback">
+                        <h2 class="visually-hidden">
+                            Вы можете задать нам любой вопрос.
+                        </h2>
+                        <form class="modal-feedback" method="post" action="https://echo.htmlacademy.ru">
+                            <p>
+                                <label for="your-name">
+                                    Ваше имя:
+                                </label>
+                                <input class="feedback name-feedback" type="text" name="name" placeholder="Имя Фамилия" id="your-name">
+                                <label for="your-mail">
+                                    Ваш e-mail:
+                                </label>
+                                <input class="feedback mail-feedback" type="email" name="email" placeholder="email@example.com" id="your-mail">
+                            </p>
+                            <p>
+                                <label for="your-question">
+                                    Текст письма:
+                                </label>
+                                <p>
+                                    <textarea class="feedback text-feedback" name="text" cols="80" rows="10" placeholder="В свободной форме" id="your-question"></textarea>
+                                </p>
+                            </p>
+                            <button class="button button-feedback">
+                                Отправить
+                            </button>
+                        </form>
+                        <button class="modal-close">
+                            х
+                        </button>
+                    </section>
+
             </section>
 
             <footer class="main-footer">
