@@ -10,9 +10,9 @@
 
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
+                <span class="main-header-logo">
                     Device
-                </a>
+                </span>
                 <ul>
                     <li>
                         <a href="catalog.html">
@@ -363,25 +363,28 @@
                             Вы можете задать нам любой вопрос.
                         </h2>
                         <form class="modal-feedback" method="post" action="https://echo.htmlacademy.ru">
-                            <p>
+                            <div class="form-name">
                                 <label for="your-name">
                                     Ваше имя:
                                 </label>
+                                <br>
                                 <input class="feedback name-feedback" type="text" name="name" placeholder="Имя Фамилия" id="your-name">
+                            </div>
+                            <div class="form-email">    
                                 <label for="your-mail">
                                     Ваш e-mail:
                                 </label>
+                                <br>
                                 <input class="feedback mail-feedback" type="email" name="email" placeholder="email@example.com" id="your-mail">
-                            </p>
-                            <p>
+                            </div>
+                            <div class="form-text">
                                 <label for="your-question">
                                     Текст письма:
                                 </label>
-                                <p>
+                                <br>
                                     <textarea class="feedback text-feedback" name="text" cols="80" rows="10" placeholder="В свободной форме" id="your-question"></textarea>
-                                </p>
-                            </p>
-                            <button class="button button-feedback">
+                            </div>
+                            <button class="button button-feedback" type="submit">
                                 Отправить
                             </button>
                         </form>
@@ -393,9 +396,9 @@
 
             <footer class="main-footer">
                 <div>
-                    <a class="main-footer-logo" href="index.html">
+                    <span class="main-footer-logo">
                         Device
-                    </a>
+                    </span>
                     <p>
                         г. Москва, ул. Строителей, 15
                     </p>    
