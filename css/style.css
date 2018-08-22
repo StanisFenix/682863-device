@@ -25,9 +25,11 @@
         
 }
 
-.best-items-slider p {
+.best-items-slider p,
+.text p {
     font-family: "open-sanslight", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
+    color: #464646;
 }
