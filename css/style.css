@@ -37,6 +37,12 @@ a {
     line-height: 30px;
     letter-spacing: 0.2em;
     color: #000000;
+
+    list-style-type: none;
+}
+
+.main-navigation a {
+    color: #000000;
 }
 
 .search input {
@@ -44,13 +50,45 @@ a {
     border: none;
 }
 
-.page-navigation li {
+.header-page-navigation li,
+.footer-page-navigation li {
     font-family: "giltoyextrabold", "Arial black", sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+
+    list-style-type: none;
+}
+
+/*Вот тут кончается main header
+____________________________
+
+и начинается main footer*/
+
+.main-footer-logo {
+    color: #ffc600;
+}
+
+.main-footer p {
+    font-family: "open-sanslight", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.footer-page-navigation li {
+    color: #ffffff;
+}
+
+.footer-navigation a {
+    color: #ffffff;
+}
+
+.user-navigation a,
+.buy a {
+    opacity: 0.7;
 }
 
 .best-items-slider p,
