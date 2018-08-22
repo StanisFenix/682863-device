@@ -161,6 +161,14 @@ ____________________________
     color: #000000;
 }
 
+.help-list li {
+    list-style-type: none;
+}
+
+.help-list button {
+    border: none;
+    background-color: transparent;
+}
 
 .button {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
