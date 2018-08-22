@@ -29,6 +29,15 @@ a {
         
 }
 
+.page-navigation li {
+    font-family: "giltoyextrabold", "Arial black", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
 .best-items-slider p,
 .text p {
     font-family: "open-sanslight", "Arial", sans-serif;
