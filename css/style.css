@@ -193,6 +193,15 @@ ____________________________
     color: #000000;
 }
 
+.delivery-companies li {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    
+    list-style-type: circle;
+}
+
 .modal-feedback label {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
