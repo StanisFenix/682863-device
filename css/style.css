@@ -19,6 +19,14 @@ a {
     text-decoration: none;    
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .main-logo {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 48px;
@@ -52,7 +60,7 @@ a {
 
 .header-page-navigation li,
 .footer-page-navigation li {
-    font-family: "giltoyextrabold", "Arial black", sans-serif;
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -62,10 +70,14 @@ a {
     list-style-type: none;
 }
 
-/*Вот тут кончается main header
+/*Вот тут кончается main-header
 ____________________________
 
-и начинается main footer*/
+и начинается main-footer*/
+
+.main-footer {
+    background-color: #464646;
+}
 
 .main-footer-logo {
     color: #ffc600;
@@ -91,6 +103,12 @@ ____________________________
     opacity: 0.7;
 }
 
+.logo-html svg {
+    fill: #ffc600;
+}
+
+/*Footer закончили, начинаемм main контейнер*/
+
 .best-items-slider p,
 .text p {
     font-family: "open-sanslight", "Arial", sans-serif;
@@ -98,3 +116,32 @@ ____________________________
     line-height: 30px;
     letter-spacing: 0.01em;
 }
+
+.best-items-slider b {
+    font-family: "gilroyextrabold", "Aria black", sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.item-list li {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    background-color: rgba(240, 197, 46, 0.5);
+
+    list-style-type: none;
+}
+
+.button {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
