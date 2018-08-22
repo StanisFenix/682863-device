@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroy_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy_extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/open_sans_light-webfont.woff2') format('woff2'),
+         url('../fonts/open_sans_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.main-logo {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #000000; 
+        
+}
+
+.best-items-slider p {
+    font-family: "open-sanslight", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+}
