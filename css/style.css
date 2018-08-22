@@ -223,6 +223,11 @@ ____________________________
     background-color: rgba(242, 242, 242, 0.5);
 }
 
+.social-button svg {
+    fill: #ffffff;
+    opacity: 0.3;
+}
+
 .button {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
