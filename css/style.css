@@ -476,6 +476,26 @@ ____________________________
     color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-feedback input[type="text"]:hover,
+.modal-feedback input[type="email"]:hover,
+.text-feedback:hover {
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-feedback input[type="text"]:focus,
+.modal-feedback input[type="email"]:focus,
+.text-feedback:focus {
+    color: #464646;
+
+    background-color: #ffffff;
+}
+
+.modal-feedback input[type="text"]:invalid,
+.modal-feedback input[type="email"]:invalid,
+.text-feedback:invalid {
+    background-color: #edb5b5;
+}
+
 .logo-companies a:hover {
     filter: none;
 
