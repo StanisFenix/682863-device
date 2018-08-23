@@ -422,6 +422,14 @@ ____________________________
     opacity: 0.3;
 }
 
+.social-button:hover svg {
+    opacity: 0.6;
+}
+
+.social-button:active svg {
+    opacity: 0.1;
+}
+
 .search input[type="search"]:hover {
     opacity: 0.6;
 }
@@ -432,6 +440,8 @@ ____________________________
         to bottom,
         #f0c52e 0%,
         #f0c52e 100%);
+
+        cursor: pointer;
 }
 
 .preview-item:hover {
@@ -440,7 +450,8 @@ ____________________________
     cursor: pointer;
 }
 
-.preview-item:active svg{
+.preview-item:active svg,
+.preview-item:active p {
     opacity: 0.3; 
 }
 
