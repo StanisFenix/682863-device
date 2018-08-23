@@ -2,7 +2,15 @@
     font-family: 'gilroyextrabold';
     src: url('../fonts/gilroy_extrabold-webfont.woff2') format('woff2'),
          url('../fonts/gilroy_extrabold-webfont.woff') format('woff');
-    font-weight: 800;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroy_light-webfont.woff2') format('woff2'),
+         url('gilroy_light-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -10,7 +18,7 @@
     font-family: 'open_sanslight';
     src: url('../fonts/open_sans_light-webfont.woff2') format('woff2'),
          url('../fonts/open_sans_light-webfont.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -155,7 +163,7 @@ ____________________________
 }
 
 .features tr:first-child {
-    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-family: "gilroylight", "Arial", sans-serif;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.01em;
@@ -223,12 +231,21 @@ ____________________________
     background-color: rgba(242, 242, 242, 0.5);
 }
 
+.footer-social li {
+    list-style-type: none;
+}
+
 .social-button svg {
     fill: #ffffff;
     opacity: 0.3;
 }
 
-.button {
+.button a {
+    color: #000000;
+}
+
+.button,
+.filter .button-show {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -237,3 +254,46 @@ ____________________________
     color: #000000;
 }
 
+
+/*Тут начинается стилизация main-container страницы каталога*/
+
+.page-title {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+.breadcrumbs li {
+    font-family: "open-sanslight", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    list-style-type: none;
+}
+
+.breadcrumbs a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filters h2,
+.sort h2 {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+
+    color: #000000;
+}
+
+.filter legend {
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
