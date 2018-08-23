@@ -401,6 +401,11 @@ ____________________________
     color: #000000;
 }
 
+.pagination-helper .button {
+    width: 160px;
+    height: 40px;
+}
+
 /*Начинаем стилизовать интерактивность элементов*/
 
 .main-logo:focus,
@@ -453,6 +458,18 @@ ____________________________
 .preview-item:active svg,
 .preview-item:active p {
     opacity: 0.3; 
+}
+
+.pagination-helper button:active,
+.pagination-helper button:focus {
+    width: 278px;
+    height: 40px;
+    color: #f7e184;
+
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #000000 100%);
 }
 
 .logo-companies a:hover {
