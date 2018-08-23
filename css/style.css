@@ -205,6 +205,8 @@ ____________________________
 }
 
 .logo-companies a {
+    filter: grayscale(100%);
+    
     opacity: 0.3;
 }
 
@@ -440,4 +442,10 @@ ____________________________
 
 .preview-item:active svg{
     opacity: 0.3; 
+}
+
+.logo-companies a:hover {
+    filter: none;
+
+    opacity: 1;
 }
