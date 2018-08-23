@@ -406,6 +406,15 @@ ____________________________
     height: 40px;
 }
 
+.catalog-item-button-back,
+.catalog-item-button-next {
+    width: 126px;
+    height: 70px;
+
+    background-color: rgba(0, 0, 0, 0.08);
+    background-image: none;
+}
+
 /*Начинаем стилизовать интерактивность элементов*/
 
 .main-logo:focus,
@@ -518,4 +527,19 @@ ____________________________
 
 .sort-item a:active {
     color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-button-back:hover,
+.catalog-item-button-next:hover {   
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: none;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+    color: #000000;
 }
