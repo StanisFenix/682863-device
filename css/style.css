@@ -472,6 +472,10 @@ ____________________________
         #000000 100%);
 }
 
+.button:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .logo-companies a:hover {
     filter: none;
 
