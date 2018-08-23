@@ -179,9 +179,21 @@ ____________________________
 .filter .button {
     border: none;
 
-    width: 200px;
-
-    background-color: #f0c52e;
+    width: 220px;
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-right: 0;
+    
+    background-color: #ffffff;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 16px,
+        #f0c52e 16px,
+        #f0c52e 24px,
+        transparent 24px,
+        transparent 100%);
 }
 
 .text h3 {
@@ -254,11 +266,23 @@ ____________________________
     line-height: 24px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-align: center;
     color: #000000;
 
-    width: 200px;
-
-    background-color: #f0c52e;
+    width: 220px;
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-right: 0;
+    
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 16px,
+        #f0c52e 16px,
+        #f0c52e 24px,
+        transparent 24px,
+        transparent 100%);
 }
 
 
@@ -373,4 +397,47 @@ ____________________________
 
 .pagination-item-current a {
     color: #000000;
+}
+
+/*Начинаем стилизовать интерактивность элементов*/
+
+.main-logo:focus,
+.main-navigation a:focus,
+.footer-page-navigation a:focus,
+.logo-html a:focus,
+.main-logo:hover,
+.main-navigation a:hover,
+.footer-page-navigation a:hover,
+.logo-html svg:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.main-logo:active,
+.main-navigation a:active,
+.footer-page-navigation a:active,
+.logo-html svg:active {
+    opacity: 0.3;
+}
+
+.search input[type="search"]:hover {
+    opacity: 0.6;
+}
+
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(
+        to bottom,
+        #f0c52e 0%,
+        #f0c52e 100%);
+}
+
+.preview-item:hover {
+    background-color: rgba(240, 197, 46, 1);
+    
+    cursor: pointer;
+}
+
+.preview-item:active svg{
+    opacity: 0.3; 
 }
