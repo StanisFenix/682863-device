@@ -543,3 +543,15 @@ ____________________________
 .pagination-item a:active {
     color: #000000;
 }
+
+.footer-user-navigation a:hover,
+.footer-buy a:hover,
+.footer-user-navigation a:focus,
+.footer-buy a:focus {
+    opacity: 1;
+}
+
+.footer-user-navigation a:active,
+.footer-buy a:active {
+    opacity: 0.3;
+}
