@@ -23,6 +23,10 @@
 
 }
 
+body {
+    min-width: 980px;
+}
+
 a {
     text-decoration: none;    
 }
@@ -554,4 +558,124 @@ ____________________________
 .footer-user-navigation a:active,
 .footer-buy a:active {
     opacity: 0.3;
+}
+
+
+/*-------------------------*/
+
+.main-header .main-navigation {
+    display: flex;
+    height: 210px;
+    padding: 0 60px;
+    padding-top: 15px;
+
+    background-image: linear-gradient(white 18%, #f7e296 18%);
+}
+
+.best-items-slider {
+    display: flex;
+    height: 486px;
+    padding-left: 90px;
+    padding-right: 60px;
+    margin-bottom: 106px;
+
+    background-image: linear-gradient(#f7e296 23%, white 23%);
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.pagination-helper-slider,
+.help-list {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-helper-slider {    
+    justify-content: space-between;
+    margin-bottom: 93px;
+
+    background-color: #e5e5e5;
+}
+
+.help-list {
+    flex-direction: column;
+    
+}
+
+.logo-companies {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.modal-feedback {
+    display: none;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.main-footer {
+    width: 100%;
+    display: flex;
+    margin-top: 98px;
+    padding-top: 70px;
+    padding-left: 
+}
+
+.main-footer .wrapper {
+    display: flex;
+}
+
+.footer-navigation {
+    display: flex;
+}
+
+
+/*Начинаю стилизовать страницу каталога*/
+
+.container-catalog-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-catalog {
+    padding-left: 59px;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort ul {
+    display: flex;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: space-between;
 }
