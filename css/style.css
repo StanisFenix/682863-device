@@ -565,7 +565,7 @@ ____________________________
 
 .main-header .main-navigation {
     display: flex;
-    height: 210px;
+    min-height: 210px;
     padding: 0 60px;
     padding-top: 15px;
 
@@ -573,7 +573,7 @@ ____________________________
 }
 
 .best-items-slider {
-    height: 486px;
+    min-height: 486px;
     padding-left: 90px;
     padding-right: 60px;
     margin-bottom: 106px;
@@ -599,6 +599,16 @@ ____________________________
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin-bottom: 86px;
+}
+
+.preview-item .container-preview {
+    min-height: 250px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .pagination-helper-slider,
@@ -607,11 +617,18 @@ ____________________________
     align-items: center;
 }
 
-.pagination-helper-slider {    
-    justify-content: space-between;
+.pagination-helper-slider {  
+    min-height: 388px;  
     margin-bottom: 93px;
 
-    background-color: #e5e5e5;
+    background-image: linear-gradient(white 35%, #e5e5e5 35%);
+}
+
+.pagination-helper-slider .text {
+    width: 486px;
+    margin-left: 116px;
+
+    align-self: center;
 }
 
 .help-list {
