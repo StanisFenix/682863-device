@@ -147,7 +147,6 @@ ____________________________
 
     text-align: center;
 
-    background-color: rgba(240, 197, 46, 0.5);
 
     list-style-type: none;
 }
@@ -464,10 +463,12 @@ ____________________________
         cursor: pointer;
 }
 
-.preview-item:hover {
-    background-color: rgba(240, 197, 46, 1);
-    
+.preview-item:hover {    
     cursor: pointer;
+}
+
+.preview-item:hover .container-preview {
+    background-color: rgba(240, 197, 46, 1);
 }
 
 .preview-item:active svg,
@@ -606,12 +607,12 @@ ____________________________
 }
 
 .preview-item .container-preview {
-    min-height: 250px;
+    min-height: 160px;
     width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+   background-color: rgba(240, 197, 46, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .pagination-helper-slider,
@@ -918,4 +919,20 @@ _____________________________________*/
 }
 
 
+
+/*Начинаю делать сетку items с svg картинками
+--------------------------------------------*/
+
+.container-preview-monopod svg {
+    align-self: flex-end;
+}
+
+.container-preview {
+    margin-bottom: 30px;
+}
+
+.preview-item p {
+    margin: 0;
+    text-align: left;
+}
                                                                                          
