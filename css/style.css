@@ -587,16 +587,15 @@ ____________________________
 
 .container-best-slider {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .best-slider-description {
-    margin-left: 125px;
+    margin-left: 128px;
+    min-height: 490px;
     width: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .item-list {
@@ -803,6 +802,18 @@ ___________________________________________
 .header-page-navigation li:first-of-type {
     min-width: 220px;
     margin-right: 320px;
+
+    position: relative;
+}
+
+.header-page-navigation li:first-of-type::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/plus.svg") no-repeat;
+    position: absolute;
+    top: 3px;
+    right: -25px;
 }
 
 .header-page-navigation li:nth-child(2) {
@@ -811,6 +822,57 @@ ___________________________________________
 
 .header-page-navigation li:nth-child(3) {
     margin-right: 110px;
+}
+
+
+/*Начинаю делать слайдер-
+--------------------------------------------*/
+
+.caption-slider {
+    padding-top: 84px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.caption-slider::before {
+    content: "";
+    height:1px;
+    width: 94px;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 40px;
+}
+
+.caption-slider::after {
+    content: counter(count-slider, decimal-leading-zero);
+    counter-increment: count-slider;
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
+    position: absolute;
+    left: 328px;
+    top: -10px;
+}
+
+.best-slider-description p {
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.features {
+    min-width: 500px;
+    margin-top: 40px;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 7px;
+}
+
+.features td {
+    padding-right: 70px;
 }
 
 
