@@ -24,7 +24,7 @@
 }
 
 body {
-    min-width: 980px;
+    min-width: 960px;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
     font-family: "open-sanslight", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.01em;
     color: #000000;
 
     list-style-type: none;
@@ -68,6 +68,8 @@ a {
 .search input {
     opacity: 0.3;
     border: none;
+    background-color: #f7e296;
+    margin-left: -125px;
 }
 
 .header-page-navigation li,
@@ -565,8 +567,10 @@ ____________________________
 
 .main-header .main-navigation {
     display: flex;
+    flex-wrap: wrap;
     min-height: 210px;
-    padding: 0 60px;
+    padding: 0;
+    padding-left: 60px;
     padding-top: 15px;
 
     background-image: linear-gradient(white 18%, #f7e296 18%);
@@ -653,7 +657,7 @@ ____________________________
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1160px;
     margin: auto;
     padding: 0 20px;
 }
@@ -663,7 +667,7 @@ ____________________________
     display: flex;
     margin-top: 98px;
     padding-top: 70px;
-    padding-left: 
+    padding-left: 0;
 }
 
 .main-footer .wrapper {
@@ -710,3 +714,106 @@ ____________________________
     justify-content: space-between;
 }
 
+/* Начинается разметка микросетки header
+___________________________________________
+                                                                                         */    
+                                                                                         
+.header-page-navigation {
+    order: 1;
+    display: flex;
+    justify-content: space-between;  
+    flex-wrap: wrap;
+    margin-bottom:0; 
+
+    padding-left: 0;
+}
+
+.main-header-logo {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.user-navigation,
+.buy {
+    padding: 0;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 23px;
+}
+
+.search {
+    margin-right: 330px;
+    position: relative;
+}
+
+.search::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/search.svg") no-repeat;
+    position: absolute; 
+    top: 7px;
+    left: -160px;
+}
+
+.user-navigation {
+    margin-right: 240px;
+}
+
+.login-link,
+.compare,
+.basket {
+    position:relative;
+}
+
+.login-link::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    background: url("../img/user.svg") no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+}
+
+.compare {
+    margin-right: 65px;
+}
+
+.compare::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../img/compare.svg") no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -22px;
+}
+
+.basket::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url("../img/cart.svg") no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -22px;
+}
+
+.header-page-navigation li:first-of-type {
+    min-width: 220px;
+    margin-right: 320px;
+}
+
+.header-page-navigation li:nth-child(2) {
+    margin-right: 35px;
+}
+
+.header-page-navigation li:nth-child(3) {
+    margin-right: 110px;
+}
+
+
+
+
+                                                                                         
