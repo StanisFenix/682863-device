@@ -846,7 +846,7 @@ ___________________________________________
 
 .caption-slider::after {
     content: counter(count-slider, decimal-leading-zero);
-    counter-increment: count-slider;
+    counter-increment: count-slider 1;
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 179px;
     line-height: 179px;
@@ -854,7 +854,7 @@ ___________________________________________
     color: #ffffff;
 
     position: absolute;
-    left: 328px;
+    right: -10px;
     top: -10px;
 }
 
@@ -876,6 +876,46 @@ ___________________________________________
 }
 
 
+/*Начинаю стилизовать и делать логику смены слайдов на главной странице
+_____________________________________*/
+
+.best-items-slider {
+    position: relative;
+
+    counter-reset: count-slider 0;
+}
+
+.container-best-slider-bracelet {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.fitness-bracellet-slide {
+    margin-left: -30px;
+    margin-right: 69px;
+}
+
+.container-best-slider-quadrupter {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+.quadrupter-slide {
+    margin-top: -10px;
+    margin-left: -60px;
+    margin-right: -80px;
+}
+
+.best-slider-description .caption-slider {
+    min-width: 500px;
+}
+
+.features-quadrupter td {
+    padding: 0;
+    width: 70px;
+}
 
 
                                                                                          
