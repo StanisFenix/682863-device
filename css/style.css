@@ -478,7 +478,6 @@ ____________________________
 
 .pagination-helper button:active,
 .pagination-helper button:focus {
-    width: 278px;
     height: 40px;
     color: #f7e184;
 
@@ -935,4 +934,52 @@ _____________________________________*/
     margin: 0;
     text-align: left;
 }
-                                                                                         
+
+/*Начинаю делать блок с доставкой, гарантией и кредитом
+--------------------------------------------------------*/
+
+.help-list button {
+    background-color: #e5e5e5;
+
+    position: relative;
+}
+             
+.help-list .button-warranty::after {
+    content: "";
+    width: 118px;
+    height: 39px;
+    background-color: black;
+    position: absolute;
+    right: -118px;
+    top: 0;
+
+    
+}
+
+.help-list .button-delivery::after {
+    content: "";
+    width: 118px;
+    height: 39px;
+    background-color: black;
+    position: absolute;
+    right: -118px;
+    top: 0;
+
+    display: none;
+}
+
+.help-list .button-credit::after {
+    content: "";
+    width: 118px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    right: -118px;
+    top: 0;
+
+    visibility: hidden;
+}
+
+/*Блок с доставкой, гарантией и кредитом не доделан. оставлю на потом.
+Начинаю делать блоки О нас и Контакты*/
+
