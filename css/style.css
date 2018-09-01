@@ -90,6 +90,7 @@ ____________________________
 и начинается main-footer*/
 
 .main-footer {
+    position: relative;
     background-color: #464646;
 }
 
@@ -255,6 +256,7 @@ ____________________________
 }
 
 .footer-social li {
+    margin-right: 23px;
     list-style-type: none;
 }
 
@@ -655,16 +657,19 @@ ____________________________
 }
 
 .wrapper {
+    min-height: 220px;
     width: 1160px;
     margin: auto;
+    margin-top: 0;
     padding: 0 20px;
 }
 
 .main-footer {
+    min-height: 323px;
     width: 100%;
     display: flex;
     margin-top: 80px;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-left: 0;
 }
 
@@ -764,7 +769,7 @@ ___________________________________________
     position:relative;
 }
 
-.login-link::before {
+.main-header .login-link::before {
     content: "";
     width: 13px;
     height: 12px;
@@ -778,7 +783,7 @@ ___________________________________________
     margin-right: 65px;
 }
 
-.compare::before {
+.main-header .compare::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -788,7 +793,7 @@ ___________________________________________
     left: -22px;
 }
 
-.basket::before {
+.main-header .basket::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -1047,4 +1052,110 @@ _____________________________________*/
 
 .contacts .button {
     margin-left: 45px;
+}
+
+
+/*Начинаю делать подвал 
+-----------------------------------------------------*/
+
+.footer-logo-address {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 164px;
+    min-width: 205px;
+}
+
+.main-footer-logo {
+    margin-bottom: 25px;
+}
+
+.footer-logo-address p {
+    margin:0;
+}
+
+.footer-logo-address p::after {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background-color: #ffc600;
+    border: 3px solid #ffc600;
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+}
+
+.wrapper-footer-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    padding-top: 43px;
+    margin: 0;
+    margin-right: 203px;
+}
+
+.footer-page-navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 425px;
+    padding: 0;
+
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.user-link {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 47px;
+    right: 372px;
+}
+
+.wrapper-phone-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 35px;
+}
+
+.main-footer .user-navigation {
+    margin-right: 65px;
+}
+
+.main-footer .login-link::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    background: url("../img/user-footer.svg") no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+}
+
+.main-footer .compare::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url("../img/compare-footer.svg") no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -22px;
+}
+
+.main-footer .basket::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url("../img/cart-footer.svg") no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -22px;
 }
