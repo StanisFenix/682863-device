@@ -911,6 +911,7 @@ _____________________________________*/
 }
 
 .container-best-slider-bracelet {
+    display: none;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -922,6 +923,7 @@ _____________________________________*/
 }
 
 .container-best-slider-quadrupter {
+    display: none;
     position: absolute;
     top: 0;
     z-index: 20;
@@ -1305,4 +1307,30 @@ form.filter {
     padding: 0;
 
     width: 90px;
+}
+
+/*Начинаю делать переключение слайдов
+------------------------------------------------------*/
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+  
+    vertical-align: top;
+  
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-controls {
+    position: absolute;
+    right: 65px;
+    bottom: 148px;
+    z-index: 20;
+
+    font-size: 0;
 }
