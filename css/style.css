@@ -1365,6 +1365,16 @@ form.filter {
     letter-spacing: 0.2em;
 }
 
+.catalog-item-button-next:hover,
+.catalog-item-button-back:hover {
+    background-color: #d9d9d9;
+}
+
+.catalog-item-button-next:active a,
+.catalog-item-button-back:active a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .pagination-item-list {
     display: flex;
     justify-content: space-between;
