@@ -1374,6 +1374,24 @@ form.filter {
     width: 90px;
 }
 
+.sort .sort-arrow {
+    margin-left: 162px;
+}
+
+.sort-arrow li {
+    margin-right: 20px;
+    opacity: 0.2;
+}
+
+.sort-arrow li:hover {
+    opacity: 0.4;
+}
+
+.sort-arrow li:active {
+    opacity: 1;
+}
+
+
 /*Начинаю делать скрытый подкаталог
 ------------------------------------------------------*/
 
