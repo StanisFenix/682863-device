@@ -1013,6 +1013,27 @@ _____________________________________*/
     display: none;
 }
 
+.help-list .button-helper-current {
+    position: relative;
+    height: 40px;
+    color: #f7e184;
+
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #000000 100%);
+}
+
+.help-list .button-helper-current::before {
+    content: "";
+    width: 118px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    right: -118px;
+    top: 0;
+}
+
 .button-delivery:focus::after {
     display: inline;
 }
@@ -1404,6 +1425,10 @@ form.filter {
 .sort-arrow li {
     margin-right: 20px;
     opacity: 0.2;
+}
+
+.sort-arrow .sort-arrow-down {
+    opacity: 1;
 }
 
 .sort-arrow li:hover {
