@@ -684,9 +684,9 @@ ____________________________
 }
 
 
-.modal-feedback {
+/* .modal-feedback {
     display: none;
-}
+} */
 
 .wrapper {
     min-height: 220px;
@@ -1607,7 +1607,89 @@ input[type="search"]:focus ~ .button-search {
 ---------------------------------------------
 --------------------------------------------------*/
 
-.modal {
+.modal-feedback {
+    min-height: 455px;
+    display: flex;
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
     position: fixed;
+    top: 50px;
+    left: 15%;
+    background-color: #ffffff;
+    padding-top: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 500;
+}
+
+.wrapper-feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+}
+
+.form-name,
+.form-email,
+.form-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name input,
+.form-email input {
+    width: 342px;
+    height: 50px;
+    margin-bottom: 35px;
+    padding-left: 18px;
+}
+
+.form-text textarea {
+    width: 741px;
+    height: 135px;
+    padding-left: 18px;
+    padding-top: 21px;
+    margin-bottom: 45px;
+}
+
+.modal-feedback .button-feedback {
+    width: 200px;
+    margin: 0;
+}
+
+button.modal-close {
+    background-color: transparent;
+    background-image: none;
+    font-size: 0;
+    position: absolute;
+    top: 6px;
+    right: 23px;
+    cursor: pointer;
+    width: auto;
+    outline: none;
+    border: none;
+}
+
+button.modal-close:hover,
+button.modal-close:active {
+    opacity: 0.5;
+}
+
+button.modal-close:active {
+    opacity: 0.3;
+}
+
+/*Модальная карта------------------------
+________________________________________
+---------------------------------------------*/
+
+.modal-map {
+    display: none;  
+    position: fixed;
+    width: 960px;
+    height: 560px;
+    top: 0;
+    left: 10%;
+    background-color: gray;
+    z-index: 500;
 }
