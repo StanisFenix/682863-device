@@ -31,6 +31,10 @@ a {
     text-decoration: none;    
 }
 
+* {
+    outline-color: #000000;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -452,7 +456,9 @@ ____________________________
 .main-logo:active,
 .main-navigation a:active,
 .footer-page-navigation a:active,
-.logo-html svg:active {
+.logo-html svg:active,
+.buy-footer a:active,
+.login-link-footer a:active {
     opacity: 0.3;
 }
 
@@ -805,7 +811,8 @@ ___________________________________________
     position:relative;
 }
 
-.main-header .login-link::before {
+
+.login-link-header a::before {
     content: "";
     width: 13px;
     height: 12px;
@@ -819,7 +826,7 @@ ___________________________________________
     margin-right: 60px;
 }
 
-.main-header .compare::before {
+.compare-header a::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -829,7 +836,7 @@ ___________________________________________
     left: -22px;
 }
 
-.main-header .basket::before {
+.basket-header a::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -844,16 +851,6 @@ ___________________________________________
     margin-right: 320px;
 
     position: relative;
-}
-
-.header-page-navigation > li:first-of-type::after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background: url("../img/plus.svg") no-repeat;
-    position: absolute;
-    top: 3px;
-    right: -25px;
 }
 
 .header-page-navigation li:nth-child(2) {
@@ -1136,8 +1133,8 @@ _____________________________________*/
     margin-bottom: 35px;
 }
 
-.modal-map {
-    margin-bottom: 50px;
+.map-button img:last-of-type {
+    margin-bottom: 75px;
 }
 
 .contacts .button {
@@ -1220,7 +1217,7 @@ _____________________________________*/
     margin-right: 65px;
 }
 
-.main-footer .login-link::before {
+.login-link-footer a::before {
     content: "";
     width: 13px;
     height: 12px;
@@ -1230,7 +1227,22 @@ _____________________________________*/
     left: -25px;
 }
 
-.main-footer .compare::before {
+.login-link:hover,
+.login-link:focus,
+.buy li:hover,
+.buy li:focus,
+.user-navigation-footer li:hover,
+.user-navigation-footer li:focus {
+    opacity: 0.6;
+}
+
+.login-link:active,
+.buy li:active,
+.user-navigation-footer a:active, {
+    opacity: 0.3;
+}
+
+.compare-footer a::before{
     content: "";
     width: 10px;
     height: 10px;
@@ -1240,7 +1252,7 @@ _____________________________________*/
     left: -22px;
 }
 
-.main-footer .basket::before {
+.basket-footer a::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -1249,7 +1261,6 @@ _____________________________________*/
     top: 8px;
     left: -22px;
 }
-
 
 
 /*Начинаю микроразметку контента страницы каталога 
@@ -1447,6 +1458,16 @@ form.filter {
     position: relative;
 }
 
+.catalog-button::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/plus.svg") no-repeat;
+    position: absolute;
+    top: 3px;
+    right: -25px;
+}
+
 .subcatalog:hover {
     display: flex;
 }
@@ -1555,4 +1576,13 @@ input[type="search"]:focus ~ .button-search {
 .button-search:active {
     background-color: #000000;
     color: rgba(255, 255, 255, 0.3);
+}
+
+/*Начинаю оформлять модальные окна
+---------------------------------------------
+--------------------------------------------------*/
+
+.modal {
+    display: none;
+    position: fixed;
 }
