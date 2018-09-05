@@ -609,6 +609,7 @@ ____________________________
 .container-best-slider {
     display: flex;
     align-items: center;
+    visibility: hidden;
 }
 
 .best-slider-description {
@@ -617,6 +618,10 @@ ____________________________
     width: 485px;
     display: flex;
     flex-direction: column;
+}
+
+.best-slider-description-quadrupter {
+    margin-left: 126px;
 }
 
 .item-list {
@@ -869,6 +874,7 @@ ___________________________________________
     padding-top: 84px;
     margin-bottom: 17px;
     position: relative;
+    z-index: 100;
 }
 
 .caption-slider::before {
@@ -893,6 +899,7 @@ ___________________________________________
     position: absolute;
     right: -15px;
     top: -10px;
+    z-index: -1;
 }
 
 .best-slider-description p {
@@ -923,7 +930,6 @@ _____________________________________*/
 }
 
 .container-best-slider-bracelet {
-    display: none;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -935,7 +941,6 @@ _____________________________________*/
 }
 
 .container-best-slider-quadrupter {
-    display: none;
     position: absolute;
     top: 0;
     z-index: 20;
@@ -1091,8 +1096,36 @@ _____________________________________*/
     background: url("../img/delivery.svg") no-repeat;
 }
 
+.text-warranty::after {
+    content: "";
+    position: absolute;
+    right: -225px;
+    top: 15px;
+    width: 134px;
+    height: 186px;
+    background: url("../img/warranty.svg") no-repeat;
+}
 
-/*Блок с доставкой, гарантией и кредитом не доделан. оставлю на потом.
+.text-credit::after {
+    content: "";
+    position: absolute;
+    right: -225px;
+    top: 15px;
+    width: 134px;
+    height: 186px;
+    background: url("../img/credit.svg") no-repeat;
+}
+
+.text-credit {
+    display: none;
+}
+
+.text-warranty {
+    display: none;
+}
+
+
+/*
 Начинаю делать блоки О нас и Контакты*/
 
 .text-about-us {
@@ -1856,4 +1889,69 @@ ________________________________________
 
 .filter-bluetooth {
     margin-bottom: 5px;
+}
+
+
+/*Оживляю слайды на главной странице*/
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    
+    width: 160px;
+    height: 18px;
+  
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+  }
+
+.slider-controls label {
+    position: relative;
+    
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.slider-controls-item::after {
+    content: "";
+    
+    position: absolute;
+    top: -40px;
+    left: 468px;
+    z-index: 100;
+    
+    width: 12px;
+    height: 12px;
+    
+    border: 1px solid black;
+    
+    border-radius: 50%;
+} 
+
+#product-1:checked ~ .slider-controls label[for="product-1"]::before,
+#product-2:checked ~ .slider-controls label[for="product-2"]::before,
+#product-3:checked ~ .slider-controls label[for="product-3"]::before {
+    content: "";
+    position: absolute;
+    top: -36px;
+    left: 472px;
+    width:  4px;
+    height: 4px;
+    border: 1px solid black;
+    
+    border-radius: 50%;
+}  
+
+#product-1:checked ~ .container-best-slider-selfie,
+#product-2:checked ~ .container-best-slider-bracelet,
+#product-3:checked ~ .container-best-slider-quadrupter {
+    visibility: visible;
 }
