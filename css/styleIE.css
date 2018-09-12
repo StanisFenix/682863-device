@@ -38,6 +38,7 @@ a {
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
+
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -70,10 +71,11 @@ a {
 }
 
 .search input {
-    opacity: 0.3;
-    border: none;
-    background-color: #f7e296;
     margin-left: -125px;
+    
+    background-color: #f7e296;
+    border: none;
+    opacity: 0.3;
 }
 
 .header-page-navigation > li,
@@ -95,8 +97,10 @@ ____________________________
 
 .main-footer {
     position: relative;
-    background-color: #464646;
+
     min-height: 325px;
+
+    background-color: #464646;
 }
 
 .main-footer-logo {
@@ -189,8 +193,6 @@ ____________________________
 .help-list button,
 .modal-feedback button,
 .filter .button {
-    border: none;
-
     width: 220px;
     padding-top: 8px;
     padding-right: 0;
@@ -222,6 +224,7 @@ ____________________________
         #f0c52e 24px,
         transparent 24px,
         transparent 100%);
+    border: none;
 }
 
 .text h3 {
@@ -234,8 +237,7 @@ ____________________________
 
 .logo-companies a {
     -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    
+            filter: grayscale(100%);    
     opacity: 0.3;
 }
 
@@ -273,13 +275,13 @@ ____________________________
     line-height: 18px;
     color: rgba(70, 70, 70, 0.4);
 
-    border: none;
-
     background-color: rgba(242, 242, 242, 0.5);
+    border: none;
 }
 
 .footer-social li {
     margin-right: 23px;
+
     list-style-type: none;
 }
 
@@ -293,6 +295,12 @@ ____________________________
 }
 
 .button {
+    width: 220px;
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-right: 0;
+
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -300,12 +308,6 @@ ____________________________
     text-transform: uppercase;
     text-align: center;
     color: #000000;
-
-    width: 220px;
-    padding-top: 8px;
-    padding-right: 0;
-    padding-bottom: 8px;
-    padding-right: 0;
 
     background-color: transparent;
     background-image: -webkit-linear-gradient(
@@ -342,7 +344,6 @@ ____________________________
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.01em;
-
     color: #000000;
 }
 
@@ -365,7 +366,6 @@ ____________________________
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2em;
-
     color: #000000;
 }
 
@@ -374,7 +374,6 @@ ____________________________
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
-
     color: #000000;
 }
 
@@ -383,21 +382,20 @@ ____________________________
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.01em;
-
     color: #000000;
 
     list-style-type: none;
 }
 
 .sort li {
+    margin-right: 30px;
+
     font-family: "Open sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: normal;
     
     list-style-type: none;;
-
-    margin-right: 30px;
 }
 
 .sort-item a {
@@ -409,18 +407,18 @@ ____________________________
 }
 
 .catalog-item h3 {
+    margin: 0;
+
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
-
-    margin: 0;
 }
 
 .catalog-item {
-    list-style-type: none;
-
     position: relative;
+
+    list-style-type: none;
 }
 
 .catalog-item a {
@@ -428,14 +426,13 @@ ____________________________
 }
 
 .catalog-item-price {
+    margin: 0;
+
     font-family:  "gilroylight", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.01em;
-
     color: #464646;
-
-    margin: 0;
 }
 
 .catalog-item-button li,
@@ -483,6 +480,7 @@ ____________________________
 .footer-page-navigation a:hover,
 .logo-html svg:hover {
     opacity: 0.6;
+
     cursor: pointer;
 }
 
@@ -527,7 +525,7 @@ ____________________________
         #f0c52e 0%,
         #f0c52e 100%);
 
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .preview-item:hover {    
@@ -546,6 +544,7 @@ ____________________________
 .pagination-helper button:active,
 .pagination-helper button:focus {
     height: 40px;
+
     color: #f7e184;
 
     background-image: -webkit-gradient(
@@ -597,7 +596,6 @@ ____________________________
 .logo-companies a:hover {
     -webkit-filter: none;
             filter: none;
-
     opacity: 1;
 }
 
@@ -652,7 +650,9 @@ ____________________________
 .main-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     min-height: 210px;
     padding: 0;
     padding-left: 60px;
@@ -685,26 +685,35 @@ ____________________________
 .container-best-slider {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+
+    visibility: hidden;
 }
 
 .best-slider-description {
-    margin-left: 128px;
-    min-height: 490px;
-    width: 485px;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    min-height: 490px;
+    width: 485px;
+    margin-left: 128px;
+}
+
+.best-slider-description-quadrupter {
+    margin-left: 126px;
 }
 
 .item-list {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -712,33 +721,39 @@ ____________________________
 }
 
 .preview-item .container-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 160px;
-    -ms-height: 160px;
     width: 160px;
-   background-color: rgba(240, 197, 46, 0.5);
-   display: -webkit-box;
-   display: -ms-flexbox;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
+
+    background-color: rgba(240, 197, 46, 0.5);
 }
 
 .pagination-helper-slider,
 .help-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     margin: 0;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
 }
 
 .help-list {
     position: relative;
+
     margin-right: 245px;
 }
 
-.pagination-helper-slider {  
+.pagination-helper-slider {
     min-height: 315px;  
     margin-bottom: 93px;
     padding-top: 90px;
@@ -753,8 +768,9 @@ ____________________________
 }
 
 .pagination-helper-slider .text {
-    width: 460px;
     position: relative;
+
+    width: 460px;
 }
 
 .text h3 {
@@ -770,9 +786,8 @@ ____________________________
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 10px;
-    
+            flex-direction: column;  
+    padding-top: 10px;  
 }
 
 .logo-companies {
@@ -805,12 +820,12 @@ ____________________________
 }
 
 .main-footer {
-    min-height: 323px;
-    width: 1440px;
-    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    min-height: 323px;
+    width: 1440px;
+    margin: auto;
     margin-top: 80px;
     padding-top: 60px;
     padding-left: 0;
@@ -859,7 +874,7 @@ ____________________________
 .sort ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex;   
     margin: 0;
     padding-top: 25px;
 }
@@ -884,8 +899,8 @@ ____________________________
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-height: 70px;    
     width: 760px;
-    min-height: 70px;
     margin: 0;
     padding: 0;
     margin-left: 70px;
@@ -898,9 +913,6 @@ ___________________________________________
                                                                                          */    
                                                                                          
 .header-page-navigation {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -910,8 +922,10 @@ ___________________________________________
     -ms-flex-wrap: wrap;  
         flex-wrap: wrap;
     margin-bottom:0; 
-
     padding-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;    
 }
 
 .main-header-logo {
@@ -921,28 +935,31 @@ ___________________________________________
 
 .user-navigation,
 .buy {
-    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    padding: 0;
     margin-bottom: 23px;
 }
 
 .search {
+    position: relative; 
     margin-right: 375px;
-    position: relative;
 }
 
 .search::before {
     content: "";
-    width: 16px;
-    height: 16px;
-    background: url("../img/search.svg") no-repeat;
+
     position: absolute; 
     top: 7px;
     left: -160px;
+
+    width: 16px;
+    height: 16px;
+
+    background: url("../img/search.svg") no-repeat;    
 }
 
 .user-navigation {
@@ -958,12 +975,15 @@ ___________________________________________
 
 .login-link-header a::before {
     content: "";
-    width: 13px;
-    height: 12px;
-    background: url("../img/user.svg") no-repeat;
+
     position: absolute;
     top: 8px;
     left: -25px;
+
+    width: 13px;
+    height: 12px;
+
+    background: url("../img/user.svg") no-repeat;    
 }
 
 .compare {
@@ -972,29 +992,35 @@ ___________________________________________
 
 .compare-header a::before {
     content: "";
-    width: 10px;
-    height: 10px;
-    background: url("../img/compare.svg") no-repeat;
+
     position: absolute;
     top: 10px;
     left: -22px;
+
+    width: 10px;
+    height: 10px;
+
+    background: url("../img/compare.svg") no-repeat;    
 }
 
 .basket-header a::before {
     content: "";
-    width: 12px;
-    height: 12px;
-    background: url("../img/cart.svg") no-repeat;
+
     position: absolute;
     top: 8px;
     left: -22px;
+
+    width: 12px;
+    height: 12px;
+
+    background: url("../img/cart.svg") no-repeat;    
 }
 
 .header-page-navigation > li:first-of-type {
+    position: relative;
+
     min-width: 220px;
     margin-right: 320px;
-
-    position: relative;
 }
 
 .header-page-navigation li:nth-child(2) {
@@ -1010,33 +1036,40 @@ ___________________________________________
 --------------------------------------------*/
 
 .caption-slider {
-    padding-top: 84px;
-    margin-bottom: 17px;
     position: relative;
+    z-index: 100;
+
+    padding-top: 84px;
+    margin-bottom: 17px;    
 }
 
 .caption-slider::before {
     content: "";
-    height:1px;
-    width: 94px;
-    background-color: #ffffff;
-    border: 3px solid #ffffff;
+
     position: absolute;
     top: 40px;
+
+    height:1px;
+    width: 94px;
+
+    background-color: #ffffff;
+    border: 3px solid #ffffff;   
 }
 
 .caption-slider::after {
     content: counter(count-slider, decimal-leading-zero);
     counter-increment: count-slider 1;
-    font-family: "gilroyextrabold", "Arial black", sans-serif;
-    font-size: 179px;
-    line-height: 179px;
-    letter-spacing: 0.01em;
-    color: #ffffff;
 
     position: absolute;
     right: -15px;
     top: -10px;
+    z-index: -1;
+
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 0.01em;
+    color: #ffffff;    
 }
 
 .best-slider-description p {
@@ -1047,7 +1080,9 @@ ___________________________________________
 .features {
     min-width: 500px;
     margin-top: 40px;
+    
     text-align: left;
+
     border-collapse: separate;
     border-spacing: 0 7px;
 }
@@ -1067,7 +1102,6 @@ _____________________________________*/
 }
 
 .container-best-slider-bracelet {
-    display: none;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -1079,7 +1113,6 @@ _____________________________________*/
 }
 
 .container-best-slider-quadrupter {
-    display: none;
     position: absolute;
     top: 0;
     z-index: 20;
@@ -1092,12 +1125,14 @@ _____________________________________*/
 }
 
 .best-slider-description .caption-slider {
+    z-index: 1;
+
     min-width: 500px;
 }
 
 .features-quadrupter td {
-    padding: 0;
     width: 70px;
+    padding: 0;
 }
 
 
@@ -1116,6 +1151,7 @@ _____________________________________*/
 
 .preview-item p {
     margin: 0;
+
     text-align: left;
 }
 
@@ -1123,23 +1159,25 @@ _____________________________________*/
 --------------------------------------------------------*/
 
 .help-list button {
-    background-color: transparent;
-
     position: relative;
+
+    background-color: transparent;    
 
     outline: none;
 }
              
 .help-list .button-warranty::after {
     content: "";
-    width: 118px;
-    height: 40px;
-    background-color: black;
+
     position: absolute;
     right: -118px;
     top: 0;
 
     display: none;
+    width: 118px;
+    height: 40px;
+
+    background-color: black;    
 }
 
 .button-warranty:focus::after {
@@ -1148,19 +1186,23 @@ _____________________________________*/
 
 .help-list .button-delivery::after {
     content: "";
-    width: 118px;
-    height: 40px;
-    background-color: black;
+
     position: absolute;
     right: -118px;
     top: 0;
 
     display: none;
+    width: 118px;
+    height: 40px;
+
+    background-color: black;    
 }
 
 .help-list .button-helper-current {
     position: relative;
+
     height: 40px;
+
     color: #f7e184;
 
     background-image: -webkit-gradient(
@@ -1187,12 +1229,15 @@ _____________________________________*/
 
 .help-list .button-helper-current::before {
     content: "";
-    width: 118px;
-    height: 40px;
-    background-color: black;
+
     position: absolute;
     right: -118px;
     top: 0;
+
+    width: 118px;
+    height: 40px;
+
+    background-color: black;    
 }
 
 .button-delivery:focus::after {
@@ -1201,13 +1246,16 @@ _____________________________________*/
 
 .help-list .button-credit::after {
     content: "";
-    width: 118px;
-    height: 40px;
-    background-color: black;
+
     position: absolute;
     right: -118px;
     top: 0;
+    
     display: none;
+    width: 118px;
+    height: 40px;
+
+    background-color: black;    
 }
 
 .button-credit:focus::after {
@@ -1215,8 +1263,9 @@ _____________________________________*/
 }
 
 .container-help-list {
-    width: 1440px;
     margin: auto;
+
+    width: 1440px;
 }
 
 .pagination-helper-slider {
@@ -1233,27 +1282,67 @@ _____________________________________*/
 
 .help-list::before {
     content: "";
-    width: 1px;
-    height: 315px;
-    border: 3px solid black;
-    background-color: black;
+
     position: absolute;
     right: -123px;
     top: -75px;
+
+    width: 1px;
+    height: 315px;
+    
+    background-color: black;
+    border: 3px solid black;    
 }
 
 .text-delivery::after {
     content: "";
+
     position: absolute;
-    right: -225px;
     top: 15px;
+    right: -225px;
+    
     width: 134px;
     height: 186px;
+
     background: url("../img/delivery.svg") no-repeat;
 }
 
+.text-warranty::after {
+    content: "";
 
-/*Блок с доставкой, гарантией и кредитом не доделан. оставлю на потом.
+    position: absolute;
+    top: 15px;
+    right: -225px;
+    
+    width: 134px;
+    height: 186px;
+
+    background: url("../img/warranty.svg") no-repeat;
+}
+
+.text-credit::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    right: -225px;
+    
+    width: 134px;
+    height: 186px;
+
+    background: url("../img/credit.svg") no-repeat;
+}
+
+.text-credit {
+    display: none;
+}
+
+.text-warranty {
+    display: none;
+}
+
+
+/*
 Начинаю делать блоки О нас и Контакты*/
 
 .text-about-us {
@@ -1272,13 +1361,17 @@ _____________________________________*/
 .about-us h3::before,
 .contacts h3::before {
     content: "";
-    width: 74px;
-    height: 1px;
-    background-color: black;
-    border: 3px solid black;
+
     position: absolute;
     left: 0;
     top: -6px;
+
+    width: 74px;
+    height: 1px;
+
+    background-color: black;
+    border: 3px solid black;
+    
 }
 
 .text-about-us p:first-child {
@@ -1329,15 +1422,18 @@ _____________________________________*/
 
 .footer-logo-address {
     position: relative;
+
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 164px;
+            flex-direction: column;    
     min-width: 205px;
+    margin-right: 164px;
 }
 
 .main-footer-logo {
@@ -1345,18 +1441,21 @@ _____________________________________*/
 }
 
 .footer-logo-address p {
-    margin:0;
+    margin: 0;
 }
 
 .footer-logo-address p::after {
     content: "";
-    width: 74px;
-    height: 1px;
-    background-color: #ffc600;
-    border: 3px solid #ffc600;
+
     position: absolute;
     left: 0;
     bottom: 35px;
+
+    width: 74px;
+    height: 1px;
+
+    background-color: #ffc600;
+    border: 3px solid #ffc600;   
 }
 
 .wrapper-footer-navigation {
@@ -1399,15 +1498,18 @@ _____________________________________*/
 }
 
 .user-link {
+    position: absolute;
+    top: 47px;
+    right: 372px;
+
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
-    top: 47px;
-    right: 372px;
 }
 
 .wrapper-phone-logo {
@@ -1432,12 +1534,15 @@ _____________________________________*/
 
 .login-link-footer a::before {
     content: "";
-    width: 13px;
-    height: 12px;
-    background: url("../img/user-footer.svg") no-repeat;
+
     position: absolute;
     top: 8px;
     left: -25px;
+
+    width: 13px;
+    height: 12px;
+
+    background: url("../img/user-footer.svg") no-repeat;
 }
 
 .login-link:hover,
@@ -1457,22 +1562,28 @@ _____________________________________*/
 
 .compare-footer a::before{
     content: "";
-    width: 10px;
-    height: 10px;
-    background: url("../img/compare-footer.svg") no-repeat;
+
     position: absolute;
     top: 10px;
     left: -22px;
+
+    width: 10px;
+    height: 10px;
+
+    background: url("../img/compare-footer.svg") no-repeat;
 }
 
 .basket-footer a::before {
     content: "";
-    width: 12px;
-    height: 12px;
-    background: url("../img/cart-footer.svg") no-repeat;
+
     position: absolute;
     top: 8px;
     left: -22px;
+
+    width: 12px;
+    height: 12px;
+
+    background: url("../img/cart-footer.svg") no-repeat;    
 }
 
 
@@ -1490,24 +1601,28 @@ _____________________________________*/
 }
 
 .breadcrumbs li {
-    margin-right: 39px;
     position: relative;
+
+    margin-right: 39px;
 }
 
 .breadcrumbs li:not(:last-child)::after {
     content: "";
-    width: 4px;
-    height: 7px;
-    background: url("../img/nav-arrow.svg") no-repeat;
+
     position: absolute;
     top: 9px;
     right: -20px;
+
+    width: 4px;
+    height: 7px;
+
+    background: url("../img/nav-arrow.svg") no-repeat;
 }
 
 .container-catalog-filter {
-    width:1440px;
-    min-height: 1287px;
     margin: auto;
+    width:1440px;
+    height: 100%;
 }
 
 .filters h2,
@@ -1522,8 +1637,8 @@ _____________________________________*/
 
 .sort {
     position: relative;
-    min-height: 70px;
     padding-left: 71px;
+    min-height: 70px;
 }
 
 .sort h2 {
@@ -1536,6 +1651,7 @@ _____________________________________*/
     padding-top: 23px;
     padding-left: 21px;
     margin: 0;
+    margin-bottom: 104px;
 }
 
 .filters {
@@ -1573,17 +1689,17 @@ form.filter {
 }
 
 .catalog-item-button-back {
-    margin-right: auto;
-    height: auto;
     padding: 25px 0;
+    margin-right: auto;
+    height: auto;   
     
     background-color: #e5e5e5;
 }
 
 .catalog-item-button-next {
-    margin-left: auto;
-    height: auto;
     padding: 25px 0;
+    margin-left: auto;
+    height: auto;    
 
     background-color: #e5e5e5;
 }
@@ -1612,10 +1728,8 @@ form.filter {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-
-    padding: 0;
-
     width: 90px;
+    padding: 0;
 }
 
 .sort .sort-arrow {
@@ -1624,6 +1738,7 @@ form.filter {
 
 .sort-arrow li {
     margin-right: 20px;
+
     opacity: 0.2;
 }
 
@@ -1645,15 +1760,17 @@ form.filter {
 
 
 .subcatalog {
-    display: none;
-    position: absolute;    
-    background-color: #f7e296;
+    position: absolute; 
     top: 18px;
     left: -60px;
-    z-index: 50;
+    z-index: 150; 
+
+    display: none;    
     min-height: 149px;
     width: 1160px;
     padding-top: 25px;
+
+    background-color: #f7e296;
 }
 
 .subcatalog ul {
@@ -1675,8 +1792,8 @@ form.filter {
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.01em;
-    color: #000000;
     text-transform: none;
+    color: #000000;
 }
 
 .catalog-button {
@@ -1685,24 +1802,32 @@ form.filter {
 
 .catalog-button::after {
     content: "";
-    width: 16px;
-    height: 16px;
-    background: url("../img/plus.svg") no-repeat;
+
     position: absolute;
     top: 3px;
     right: -25px;
+
+    width: 16px;
+    height: 16px;
+
+    background: url("../img/plus.svg") no-repeat;    
 }
 
 .subcatalog:hover {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
 }
 
 .catalog-button:hover ~ .subcatalog,
 .catalog-button:active ~ .subcatalog  {
-    display: -webkit-box;
-    display: -ms-flexbox;
     z-index: 50;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
 }
 
 
@@ -1713,18 +1838,22 @@ ________________________________________________*/
 .catalog-item:hover .mask-of-item {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
 }
 
 
 .catalog-item:hover .mask-of-item {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
+
     opacity: 1; 
 }
 
 .mask-of-item {
-    width: 100%;
-    height: 384px;
+    position: absolute;
+    top: 0;
+
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1733,9 +1862,11 @@ ________________________________________________*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
-    top: 0;
+    width: 100%;
+    height: 384px;   
+    
     background-color: rgba(255, 255, 255, 0.3);
+
     cursor: pointer;
 }
 
@@ -1749,10 +1880,12 @@ ________________________________________________*/
     font-size: 13px;
     line-height: 36px;
     letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.5);
+
     border: none;
     background: none;
+
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
     outline: none;
 }
 
@@ -1778,33 +1911,42 @@ input[type="search"]:focus ~ .button-search {
 }
 
 .button-search {
-    display: none;
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 0.01em;
-    border: 2px solid black;
-    padding: 7px 18px;
-    background-color: transparent;
     position: absolute;
     top: -10px;
     right: -248px;
+
+    display: none;    
+    
+    padding: 7px 18px;
+
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+
+    background-color: transparent;
+    border: 2px solid black;    
 }
 
 .button-search::before {
     content: "";
-    width: 400px;
-    height: 2px;
-    background-color: black;
+
     position: absolute;
     bottom: -2px;
     left: -400px;
+
+    width: 400px;
+    height: 2px;
+
+    background-color: black;    
 }
 
 .button-search:hover,
 .button-search:focus {
     display: block;
-    background-color: #000000;
+    
     color: #ffffff;
+
+    background-color: #000000;
 }
 
 .button-search:active {
@@ -1817,9 +1959,18 @@ input[type="search"]:focus ~ .button-search {
 --------------------------------------------------*/
 
 .modal-feedback {
-    min-height: 455px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    
     display: -webkit-box;
+    
     display: -ms-flexbox;
+    
+    display: flex;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1827,15 +1978,17 @@ input[type="search"]:focus ~ .button-search {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start;
-    position: fixed;
-    top: 50px;
-    left: 15%;
-    background-color: #ffffff;
+            align-items: flex-start;   
+    height: 455px;
+    width: 960px; 
+    margin: auto;
     padding-top: 90px;
     padding-left: 100px;
-    padding-right: 100px;
-    z-index: 500;
+    padding-right: 100px;    
+    
+    background-color: #ffffff;    
+    -webkit-box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);    
+            box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .wrapper-feedback {
@@ -1853,6 +2006,7 @@ input[type="search"]:focus ~ .button-search {
 .form-text {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1881,16 +2035,20 @@ input[type="search"]:focus ~ .button-search {
 }
 
 button.modal-close {
-    background-color: transparent;
-    background-image: none;
-    font-size: 0;
     position: absolute;
     top: 6px;
     right: 23px;
-    cursor: pointer;
+    
     width: auto;
-    outline: none;
+
+    font-size: 0;
+    
+    background-color: transparent;
+    background-image: none;
     border: none;
+
+    cursor: pointer;
+    outline: none;
 }
 
 button.modal-close:hover,
@@ -1907,12 +2065,271 @@ ________________________________________
 ---------------------------------------------*/
 
 .modal-map {
-    display: none;  
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+
+    display: none;      
     width: 960px;
     height: 560px;
-    top: 0;
-    left: 10%;
-    background-color: gray;
-    z-index: 500;
+    margin: auto;
+    
+    background-color: gray;    
+    -webkit-box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);    
+            box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);    
+}
+
+
+/*Начинаю стилизовать чекбоксы и радиокнопки
+----------------------------------------------------------
+------------------------------------------------------------
+---------------------------------------------------------------------*/
+.filter fieldset {
+    position: relative;
+
+    padding-left: 17px;
+
+    border: none;    
+}
+
+.filter legend::before {
+    content: "";
+
+    position: absolute;
+    top: -12px;
+
+    width: 198px;
+    height: 0px;
+    
+    background-color: black;
+    border: 1px solid black;
+    
+}
+
+.filter-option label {
+    cursor: pointer;
+}
+
+.filter-option {
+    position: relative;
+}
+
+.filter-input-checkbox ~ label::before {
+    content: "";
+
+    position: absolute;
+    left: -41px;
+    top: 7px;
+
+    width: 23px;
+    height: 23px;    
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked ~ label::after {
+    content: "";
+
+    position: absolute;
+    left: -41px;
+    top: 7px;
+
+    width: 23px;
+    height: 27px;    
+
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+}
+
+.filter-input-radio ~ label::before {
+    content: "";
+
+    position: absolute;
+    left: -41px;
+    top: 7px;
+
+    width: 25px;
+    height: 25px;
+    
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked ~ label::after {
+    content: "";
+
+    position: absolute;
+    left: -41px;
+    top: 7px;
+
+    width: 25px;
+    height: 25px;
+    
+    background-image: url("../img/radio-on.svg");
+    background-repeat: no-repeat;
+}
+
+.range-filter {
+    width: 196px;
+    margin-top: 29px;
+}
+
+.range-controls {
+    position: relative;
+
+    height:11px;
+
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: #dbdbdb;
+}
+
+.range-controls .bar {
+    width: 56%;
+    height: 2px;
+
+    background-color: #91c92f;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: -9px;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    
+    background-color: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf;
+
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: -5px;
+}
+
+.range-controls .toggle-max {
+    left: 108px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 46%;
+
+    font-family: "gilroylight", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price-controls input {
+    width: 35px;
+
+    font-size: 14px;
+    text-align: left;   
+    color: #281136;
+    
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;    
+}
+
+.filter-cost {
+    margin-bottom: 33px;
+}
+
+.filter-colors {
+    margin-bottom: 14px;
+}
+
+.filter-bluetooth {
+    margin-bottom: 5px;
+}
+
+
+/*Оживляю слайды на главной странице*/
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    
+    width: 160px;
+    height: 18px;  
+ 
+    font-size: 0;
+    text-align: center;
+
+    -webkit-transform: translateX(-50%);
+
+        -ms-transform: translateX(-50%);
+
+            transform: translateX(-50%);
+  }
+
+.slider-controls label {
+    position: relative;
+    
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    
+    
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.slider-controls-item::after {
+    content: "";
+    
+    position: absolute;
+    top: -40px;
+    left: 468px;
+    z-index: 100;
+    
+    width: 12px;
+    height: 12px;
+    
+    border: 1px solid black;    
+    border-radius: 50%;
+} 
+
+#product-1:checked ~ .slider-controls label[for="product-1"]::before,
+#product-2:checked ~ .slider-controls label[for="product-2"]::before,
+#product-3:checked ~ .slider-controls label[for="product-3"]::before {
+    content: "";
+
+    position: absolute;
+    top: -36px;
+    left: 472px;
+
+    width:  4px;
+    height: 4px;
+
+    border: 1px solid black;    
+    border-radius: 50%;
+}  
+
+#product-1:checked ~ .container-best-slider-selfie,
+#product-2:checked ~ .container-best-slider-bracelet,
+#product-3:checked ~ .container-best-slider-quadrupter {
+    visibility: visible;
 }
