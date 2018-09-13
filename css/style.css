@@ -46,6 +46,58 @@ a {
 
 .main-header {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 220px;
+
+    background-image: linear-gradient( to bottom,
+     transparent 0%,
+      transparent 36px,
+       #f7e296 36px,
+        #f7e296 100%); ;
+}
+
+.main-navigation-index {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+}
+
+.navigation-catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.8;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-catalog li:first-of-type {
+    padding-left: 60px;
+}
+
+.navigation-catalog li:last-of-type {
+    padding-left: 10px;
+}
+
+.feedback-warranty {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.4;
+    margin: 0;
+    padding: 0;
+    padding-right: 17px;
+}
+
+.feedback-warranty li:first-of-type {
+    padding-right: 30px;
+}
+
+.wrapper-navigation-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .main-logo {
@@ -82,7 +134,8 @@ a {
     opacity: 0.3;
 }
 
-.header-page-navigation > li,
+.navigation-catalog li,
+.feedback-warranty li,
 .footer-page-navigation li {
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 18px;
@@ -700,23 +753,6 @@ ____________________________
 /*-------------------------*/
 
 .main-header .main-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 210px;
-    padding: 0;
-    padding-left: 60px;
-    padding-top: 15px;
-
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(18%, white), color-stop(18%, #f7e296));
-
-    background-image: -webkit-linear-gradient(white 18%, #f7e296 18%);
-
-    background-image: -o-linear-gradient(white 18%, #f7e296 18%);
-
-    background-image: linear-gradient(white 18%, #f7e296 18%);
 }
 
 .best-items-slider {
@@ -966,42 +1002,35 @@ ____________________________
 ___________________________________________
                                                                                          */    
                                                                                          
-.header-page-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;  
-    -ms-flex-wrap: wrap;  
-        flex-wrap: wrap;
-    margin-bottom:0; 
-    padding-left: 0;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;    
-}
 
 .main-header-logo {
-    position: absolute;
-    top: 17px;
-    left: 57px;
+    padding-top: 15px;
+    padding-left: 58px;
+    margin-bottom: 19px;
 }
 
-.user-navigation,
 .buy {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    justify-content: flex-end;
+    flex-grow: 0.6;
+    margin: 0;
     padding: 0;
-    margin-bottom: 23px;
+}
+
+.compare-header {
+    margin-right: 62px;
+}
+
+.basket-header {
+    padding-right: 60px;
+}
+
+.login-link-header {
+    padding-right: 20px;
 }
 
 .search {
     position: relative; 
-    margin-right: 360px;
 }
 
 .search-catalog {
@@ -1022,7 +1051,12 @@ ___________________________________________
 }
 
 .user-navigation-index {
-    margin-right: 238px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
 }
 
 .login-link,
@@ -1070,21 +1104,6 @@ ___________________________________________
     background: url("../img/cart.svg") no-repeat;    
 }
 
-.header-page-navigation > li:first-of-type {
-    position: relative;
-
-    min-width: 220px;
-    margin-right: 320px;
-}
-
-.header-page-navigation li:nth-child(2) {
-    margin-right: 35px;
-}
-
-.header-page-navigation li:nth-child(3) {
-    margin-right: 110px;
-}
-
 
 /*Начинаю делать слайдер-
 --------------------------------------------*/
@@ -1093,7 +1112,7 @@ ___________________________________________
     position: relative;
     z-index: 100;
 
-    padding-top: 84px;
+    padding-top: 88px;
     margin-bottom: 19px;    
 }
 
@@ -1133,7 +1152,7 @@ ___________________________________________
 
 .features {
     min-width: 500px;
-    margin-top: 39px;
+    margin-top: 45px;
     
     text-align: left;
 
@@ -2644,7 +2663,6 @@ ______________________________________________*/
 }
 
 .user-navigation-index .search {
-    margin-right: 376px;
 }
 
 .container-wrapper .wrapper-title {
