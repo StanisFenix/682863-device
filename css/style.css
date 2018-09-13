@@ -1737,10 +1737,6 @@ form.filter {
     min-width: 290px;
 }
 
-.main-footer-catalog {
-    margin-top: 0;
-}
-
 .catalog-list li {
     margin-right: 40px;    
     margin-bottom: 44px;
@@ -2643,21 +2639,6 @@ ______________________________________________*/
     opacity: 0.3;
 }
 
-.buy-footer-catalog {
-    margin: 0;
-    padding-top: 22px;
-    padding-left: 106px;
-}
-
-.main-footer .user-navigation-catalog {
-    position: absolute;
-    top: 8px;
-    left: 339px;
-    
-    width: 196px;
-    margin: 0;
-}
-
 .authorization-user {
     width: 196px;
 }
@@ -2679,7 +2660,8 @@ ______________________________________________*/
     margin: 0;
 }
 
-.user-navigation-footer a {
+.user-navigation-footer a,
+.authorization-user-footer li {
     color: #ffffff;
 }
 
@@ -2690,4 +2672,19 @@ ______________________________________________*/
 
     background-color: #ffc600;
     border: 3px solid #ffc600;
+}
+
+.user-navigation-catalog {
+    min-width: 452px;
+}
+
+.authorization-user-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    min-width: 196px;
+}
+
+.wrapper-footer-catalog {
+    margin-top: 0;
 }
