@@ -150,6 +150,10 @@ ____________________________
     color: #464646;
 }
 
+.user-navigation-footer {
+    margin-right: 65px;
+}
+
 .best-items-slider b {
     font-family: "gilroyextrabold", "Aria black", sans-serif;
     font-size: 47px;
@@ -243,9 +247,7 @@ ____________________________
     color: #000000;
 }
 
-.logo-companies a {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);    
+.logo-companies a {  
     opacity: 0.3;
 }
 
@@ -601,10 +603,28 @@ ____________________________
     background-color: #edb5b5;
 }
 
-.logo-companies a:hover {
-    -webkit-filter: none;
-            filter: none;
+.logo-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+}
+
+.logo-item {
+    position: relative;
+}
+
+.logo-item:hover a {
+    visibility: hidden;
     opacity: 1;
+}
+
+.logo-item-dji:hover .logo-hidden-dji,
+.logo-item-sp:hover .logo-hidden-sp,
+.logo-item-gopro:hover .logo-hidden-gopro,
+.logo-item-vive:hover .logo-hidden-vive {
+    visibility: visible;
 }
 
 .breadcrumbs a:hover,
@@ -825,7 +845,7 @@ ____________________________
 
 .container-wrapper .wrapper {
     min-height: 140px;
-    margin-bottom: 39px;
+    margin-bottom: 48px;
     padding-left: 143px;
 }
 
@@ -841,7 +861,7 @@ ____________________________
     width: 100%;
     margin: auto;
     margin-top: 80px;
-    padding-top: 60px;
+    padding-top: 57px;
     padding-left: 0;
 }
 
@@ -875,10 +895,6 @@ ____________________________
     height: 100%;        
     margin: auto;
     padding-left: 123px;
-}
-
-.container-catalog {
-    padding-left: 122px;
 }
 
 .container-wrapper {
@@ -929,11 +945,11 @@ ____________________________
         -ms-flex-align: center;
             align-items: center;
     min-height: 70px;    
-    width: 760px;
+    width: 757px;
     margin: 0;
     padding: 0;
     margin-left: 70px;
-    margin-bottom: 79px;
+    margin-bottom: 74px;
 
     background-color: #e5e5e5;
 }
@@ -980,6 +996,10 @@ ___________________________________________
     margin-right: 360px;
 }
 
+.search-catalog {
+    margin-right: 377px;
+}
+
 .search::before {
     content: "";
 
@@ -993,7 +1013,7 @@ ___________________________________________
     background: url("../img/search.svg") no-repeat;    
 }
 
-.user-navigation {
+.user-navigation-index {
     margin-right: 238px;
 }
 
@@ -1560,6 +1580,7 @@ a.map-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 400px;        
 }
 
 .wrapper-phone-logo {
@@ -1577,10 +1598,6 @@ a.map-button {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-top: 61px;
-}
-
-.main-footer .user-navigation {
-    margin-right: 65px;
 }
 
 .login-link-footer a::before {
@@ -1834,6 +1851,10 @@ form.filter {
             justify-content: space-between;
     width: 90px;
     padding: 0;
+}
+
+.pagination-item-list .paginaiton-item-current {
+    opacity: 1;
 }
 
 .sort .sort-arrow {
@@ -2217,7 +2238,7 @@ ________________________________________
 }
 
 .filter-colors legend::before {
-    bottom: 264px;
+    bottom: 261px;
 }
 
 .filter-bluetooth legend::before {
@@ -2387,7 +2408,7 @@ ________________________________________
 }
 
 .filter-bluetooth legend {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .filter-bluetooth ul {
@@ -2699,7 +2720,11 @@ ______________________________________________*/
     margin-right: 376px;
 }
 
-.user-navigation-footer,
-.login-link-footer {
-    margin-right: 65px;
+.main-navigation .login-link-footer {
+    width: 43px;
+}
+
+.container-wrapper .wrapper-title {
+    padding-left: 139px;
+    margin-bottom: 46px;
 }
