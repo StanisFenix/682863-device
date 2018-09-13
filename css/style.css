@@ -99,6 +99,36 @@ ____________________________
 
 и начинается main-footer*/
 
+.wrapper-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 238px;
+    width: 1160px;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+.footer-logo-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.wrapper-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 32px;
+}
+
+.wrapper-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main-footer {
     position: relative;
 
@@ -108,12 +138,13 @@ ____________________________
 }
 
 .main-footer-logo {
+    align-self: flex-start;
+
     color: #ffc600;
 }
 
 .main-footer p {
     margin: 0;
-    padding-top: 14px;
 
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;
@@ -134,7 +165,6 @@ ____________________________
 }
 
 .logo-html {
-    padding-bottom: 17px;
 }
 
 /*Footer закончили, начинаемм main контейнер*/
@@ -148,10 +178,6 @@ ____________________________
     line-height: 30px;
     letter-spacing: 0.01em; 
     color: #464646;
-}
-
-.user-navigation-footer {
-    margin-right: 65px;
 }
 
 .best-items-slider b {
@@ -290,8 +316,6 @@ ____________________________
 }
 
 .footer-social li {
-    margin-right: 23px;
-
     list-style-type: none;
 }
 
@@ -853,18 +877,6 @@ ____________________________
     min-height: 100%;
 }
 
-.main-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 323px;
-    width: 100%;
-    margin: auto;
-    margin-top: 80px;
-    padding-top: 57px;
-    padding-left: 0;
-}
-
 .main-footer .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -874,11 +886,7 @@ ____________________________
 .footer-navigation {
     position: relative;
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
+    align-self: flex-end;
 }
 
 
@@ -1036,11 +1044,6 @@ ___________________________________________
 
     background: url("../img/user.svg") no-repeat;    
 }
-
-.compare {
-    margin-right: 62px;
-}
-
 .compare-header a::before {
     content: "";
 
@@ -1485,30 +1488,6 @@ a.map-button {
 /*Начинаю делать подвал 
 -----------------------------------------------------*/
 
-.footer-logo-address {
-    position: relative;
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;    
-    min-width: 205px;
-    margin-right: 164px;
-}
-
-.main-footer-logo {
-    margin-bottom: 14px;
-}
-
-.footer-logo-address p {
-    margin: 0;
-}
-
 .footer-logo-address p::after {
     content: "";
 
@@ -1542,29 +1521,21 @@ a.map-button {
 }
 
 .footer-page-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    min-width: 425px;
-    padding: 0;
+    justify-content: space-between;
+    width: 425px;
     margin: 0;
-    padding-top: 23px;
-
+    padding: 0;
+    padding-right: 40px;
 }
 
 .footer-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: space-between;
     margin: 0;
-    padding-left: 20px;
-    padding-top: 36px;
+    padding: 0;
+    padding-right: 55px;
+    min-width: 145px;
 }
 
 .user-link {
@@ -1584,20 +1555,6 @@ a.map-button {
 }
 
 .wrapper-phone-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        -webkit-box-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-top: 61px;
 }
 
 .login-link-footer a::before {
@@ -2628,17 +2585,6 @@ ______________________________________________*/
     margin-right: 50px;
 }
 
-.user-navigation-footer,
-.authorization-user ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0;
-}
-
 .name-user,
 .footer-name-user {
     position: relative;
@@ -2720,11 +2666,28 @@ ______________________________________________*/
     margin-right: 376px;
 }
 
-.main-navigation .login-link-footer {
-    width: 43px;
-}
-
 .container-wrapper .wrapper-title {
     padding-left: 139px;
     margin-bottom: 46px;
+}
+
+.user-navigation-footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    min-width: 300px;
+    margin: 0;
+}
+
+.user-navigation-footer a {
+    color: #ffffff;
+}
+
+.yellow-line {
+    font-size: 0;
+    width: 74px;
+    height: 1px;
+
+    background-color: #ffc600;
+    border: 3px solid #ffc600;
 }
