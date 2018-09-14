@@ -113,8 +113,11 @@ a {
 }
 
 .search,
-.login-link,
-.buy li {
+.login-link a,
+.buy a,
+.login-link-header,
+.compare,
+.basket {
     font-family: "open_sanslight", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -840,7 +843,8 @@ ____________________________
 .help-list {
     position: relative;
 
-    margin-right: 245px;
+    padding-left: 0;
+    margin-right: 241px;
 }
 
 .pagination-helper-slider {
@@ -900,7 +904,6 @@ ____________________________
     width: 1160px;
     margin: auto;
     margin-top: 0;
-    padding: 0 20px;
 }
 
 .container-wrapper .wrapper {
@@ -1348,10 +1351,6 @@ _____________________________________*/
     background-image: -o-linear-gradient(white 29.5%, #e5e5e5 29.5%);
 
     background-image: linear-gradient(white 29.5%, #e5e5e5 29.5%);
-}
-
-.pagination-helper-slider {
-    padding-right: 80px;
 }
 
 .pagination-helper {
@@ -2412,7 +2411,7 @@ ________________________________________
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90px;
+    width: 84px;
     height: 18px;  
  
     font-size: 0;
@@ -2445,8 +2444,8 @@ ________________________________________
     left: 468px;
     z-index: 100;
     
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     
     border: 1px solid black;    
     border-radius: 50%;
@@ -2459,10 +2458,10 @@ ________________________________________
 
     position: absolute;
     top: -36px;
-    left: 472px;
+    left: 471.5px;
 
-    width:  4px;
-    height: 4px;
+    width:  3px;
+    height: 3px;
 
     border: 1px solid black;    
     border-radius: 50%;
@@ -2701,6 +2700,7 @@ ______________________________________________*/
 }
 
 .user-navigation-catalog {
+    min-width: 450px;
     padding-left: 60px;
 }
 
