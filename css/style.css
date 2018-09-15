@@ -35,8 +35,12 @@ img {
     max-width: 100%;
 }
 
-* {
+.main-header a {
     outline-color: #000000;
+}
+
+.main-footer a {
+    outline-color: #ffc600;
 }
 
 .visually-hidden {
@@ -838,13 +842,13 @@ ____________________________
     padding-right: 60px;
     margin-bottom: 106px;
 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #f7e296), color-stop(24%, white));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(113px, #f7e296), color-stop(113p, white));
 
-    background-image: -webkit-linear-gradient(#f7e296 24%, white 24%);
+    background-image: -webkit-linear-gradient(#f7e296 113px, white 113px);
 
-    background-image: -o-linear-gradient(#f7e296 24%, white 24%);
+    background-image: -o-linear-gradient(#f7e296 113px, white 113px);
 
-    background-image: linear-gradient(#f7e296 24%, white 24%);
+    background-image: linear-gradient(#f7e296 113px, white 113px);
 }
 
 .container-best-slider {
@@ -1089,6 +1093,8 @@ ___________________________________________
     padding-top: 17px;
     padding-left: 58px;
     margin-bottom: 19px;
+
+    outline: none;
 }
 
 .buy {
@@ -1438,13 +1444,13 @@ _____________________________________*/
 }
 
 .container-help-list {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(29.5%, white), color-stop(29.5%, #e5e5e5));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(119px, white), color-stop(119px, #e5e5e5));
 
-    background-image: -webkit-linear-gradient(white 29.5%, #e5e5e5 29.5%);
+    background-image: -webkit-linear-gradient(white 119px, #e5e5e5 119px);
 
-    background-image: -o-linear-gradient(white 29.5%, #e5e5e5 29.5%);
+    background-image: -o-linear-gradient(white 119px, #e5e5e5 119px);
 
-    background-image: linear-gradient(white 29.5%, #e5e5e5 29.5%);
+    background-image: linear-gradient(white 119px, #e5e5e5 119px);
 }
 
 .pagination-helper {
@@ -2857,4 +2863,29 @@ ______________________________________________*/
             justify-content: space-between;
     min-width: 288px;
     margin-right: 230px;
+}
+
+.new-model {
+    position: absolute;
+    top: 29px;
+    right:26px;
+
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    padding-top: 17px;
+    box-sizing: border-box;
+
+    font-family: "gilroyextrabold", "Arial black", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: Uppercase;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.2);
+
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
 }
