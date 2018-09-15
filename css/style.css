@@ -31,6 +31,10 @@ a {
     text-decoration: none;    
 }
 
+img {
+    max-width: 100%;
+}
+
 * {
     outline-color: #000000;
 }
@@ -47,10 +51,31 @@ a {
 .main-header {
     position: relative;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     min-height: 225px;
+
+    background-image: -webkit-linear-gradient( top,
+     transparent 0%,
+      transparent 39px,
+       #f7e296 39px,
+        #f7e296 100%);
+
+    background-image: -o-linear-gradient( top,
+     transparent 0%,
+      transparent 39px,
+       #f7e296 39px,
+        #f7e296 100%);
 
     background-image: linear-gradient( to bottom,
      transparent 0%,
@@ -60,17 +85,31 @@ a {
 }
 
 .main-navigation-index {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    order: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
 }
 
 .navigation-catalog {
     position: relative;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
-    flex-grow: 0.8;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 0.8;
+        -ms-flex-positive: 0.8;
+            flex-grow: 0.8;
     margin: 0;
     padding: 0;
 }
@@ -84,9 +123,14 @@ a {
 }
 
 .feedback-warranty {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-grow: 0.4;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-flex: 0.4;
+        -ms-flex-positive: 0.4;
+            flex-grow: 0.4;
     margin: 0;
     padding: 0;
     padding-right: 17px;
@@ -97,8 +141,12 @@ a {
 }
 
 .wrapper-navigation-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -158,9 +206,15 @@ ____________________________
 и начинается main-footer*/
 
 .wrapper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     min-height: 238px;
     width: 1160px;
     margin: auto;
@@ -169,22 +223,40 @@ ____________________________
 }
 
 .footer-logo-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .wrapper-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 32px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 40px;
 }
 
 .wrapper-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .main-footer {
@@ -196,7 +268,9 @@ ____________________________
 }
 
 .main-footer-logo {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 6px;
 
     color: #ffc600;
 }
@@ -844,7 +918,7 @@ ____________________________
     position: relative;
 
     padding-left: 0;
-    margin-right: 241px;
+    margin-right: 242px;
 }
 
 .pagination-helper-slider {
@@ -885,7 +959,7 @@ ____________________________
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 93px;
+    margin-bottom: 95px;
 }
 
 .contacts-wrapper {
@@ -925,7 +999,9 @@ ____________________________
 .footer-navigation {
     position: relative;
 
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+
+        align-self: flex-end;
 }
 
 
@@ -976,7 +1052,9 @@ ____________________________
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; 
-    justify-content: space-between;    
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;    
     padding-left: 70px;
     padding-top: 55px;
     margin-bottom: 0;
@@ -997,7 +1075,7 @@ ____________________________
     margin: 0;
     padding: 0;
     margin-left: 74px;
-    margin-bottom: 74px;
+    margin-bottom: 73px;
 
     background-color: #e5e5e5;
 }
@@ -1008,15 +1086,21 @@ ___________________________________________
                                                                                          
 
 .main-header-logo {
-    padding-top: 15px;
+    padding-top: 17px;
     padding-left: 58px;
     margin-bottom: 19px;
 }
 
 .buy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-grow: 0.6;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 0.6;
+        -ms-flex-positive: 0.6;
+            flex-grow: 0.6;
     margin: 0;
     padding: 0;
 }
@@ -1059,9 +1143,15 @@ ___________________________________________
 }
 
 .user-navigation-index {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     margin: 0;
     padding: 0;
     padding-left: 60px;
@@ -1170,6 +1260,10 @@ ___________________________________________
 
 .features td {
     padding-right: 70px;
+}
+
+.features td:last-of-type {
+    padding-right: 60px;
 }
 
 
@@ -1379,7 +1473,7 @@ _____________________________________*/
     content: "";
 
     position: absolute;
-    top: 12px;
+    top: 16px;
     left: 555px;
     
     width: 136px;
@@ -1393,7 +1487,7 @@ _____________________________________*/
 
     position: absolute;
     top: 15px;
-    right: -225px;
+    left: 535px;
     
     width: 171px;
     height: 195px;
@@ -1405,8 +1499,8 @@ _____________________________________*/
     content: "";
 
     position: absolute;
-    top: 15px;
-    right: -225px;
+    top: 0;
+    left: 515px;
     
     width: 156px;
     height: 188px;
@@ -1416,14 +1510,17 @@ _____________________________________*/
 
 .text-credit {
     display: none;
+    padding-top: 5px;
 }
 
 .text-warranty {
     display: none;
+    padding-top: 5px;
 }
 
 .text-delivery {
     display: none;
+    padding-top: 5px;   
 }
 
 .text-show {
@@ -1437,8 +1534,11 @@ _____________________________________*/
     width: 500px;
 }
 
-.about-us h3 {
-    margin-bottom: 45px;
+.about-us h3,
+.contacts h3 {
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 43px;
 }
 
 .about-us,
@@ -1500,7 +1600,7 @@ _____________________________________*/
 a.map-button {
     display: block;
     height: 100%;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
 }
 
 .contacts .button {
@@ -1544,8 +1644,12 @@ a.map-button {
 }
 
 .footer-page-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 425px;
     margin: 0;
     padding: 0;
@@ -1553,8 +1657,12 @@ a.map-button {
 }
 
 .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
     padding-right: 55px;
@@ -1770,7 +1878,7 @@ form.filter {
 
 .catalog-list li:nth-last-of-type(2),
 .catalog-list li:last-of-type {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .catalog-item img {
@@ -2199,6 +2307,7 @@ ________________________________________
     content: "";
 
     position: absolute;
+    left: 17px;
 
     width: 198px;
     height: 0px;
@@ -2345,6 +2454,8 @@ ________________________________________
     display: inline-block;
     width: 46%;
 
+    vertical-align: middle;
+
     font-family: "gilroylight", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -2399,8 +2510,8 @@ ________________________________________
 
 .slider-controls {
     position: absolute;
-    left: 49%;
-    bottom: 104px;
+    right: 38px;
+    bottom: 145px;
     z-index: 100;
     
     display: -webkit-box;
@@ -2431,6 +2542,7 @@ ________________________________________
     width: 18px;
     height: 18px;
     
+    vertical-align: middle;
     
     border-radius: 50%;
     cursor: pointer;
@@ -2440,8 +2552,8 @@ ________________________________________
     content: "";
     
     position: absolute;
-    top: -40px;
-    left: 468px;
+    top: 50%;
+    left: 50%;
     z-index: 100;
     
     width: 10px;
@@ -2449,6 +2561,8 @@ ________________________________________
     
     border: 1px solid black;    
     border-radius: 50%;
+
+    transform: translate(-50%, -50%);
 } 
 
 #product-1:checked ~ .slider-controls label[for="product-1"]::before,
@@ -2457,14 +2571,16 @@ ________________________________________
     content: "";
 
     position: absolute;
-    top: -36px;
-    left: 471.5px;
+    top: 50%;
+    left: 50%;
 
     width:  3px;
     height: 3px;
 
     border: 1px solid black;    
     border-radius: 50%;
+
+    transform: translate(-50%, -50%);
 }  
 
 #product-1:checked ~ .container-best-slider-selfie,
@@ -2477,6 +2593,8 @@ ________________________________________
     display: inline-block;
     width: 260px;
     margin-left: 0;
+
+    vertical-align: middle;
 }
 
 
@@ -2669,7 +2787,8 @@ ______________________________________________*/
 }
 
 .container-wrapper .wrapper-title {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: auto;
     margin-bottom: 47px;
     padding: 0;
@@ -2678,9 +2797,14 @@ ______________________________________________*/
 }
 
 .user-navigation-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-self: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: center;
+        align-self: center;
     min-width: 300px;
     margin: 0;
 }
@@ -2694,6 +2818,7 @@ ______________________________________________*/
     font-size: 0;
     width: 74px;
     height: 1px;
+    margin-bottom: 10px;
 
     background-color: #ffc600;
     border: 3px solid #ffc600;
@@ -2706,8 +2831,12 @@ ______________________________________________*/
 
 .authorization-user,
 .authorization-user-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     min-width: 196px;
 }
@@ -2717,15 +2846,15 @@ ______________________________________________*/
 }
 
 .buy-catalog {
-    flex-grow: 0.1;
-}
-
-.sort .sort-arrow {
-
+    -webkit-box-flex: 0.1;
+        -ms-flex-positive: 0.1;
+            flex-grow: 0.1;
 }
 
 .sort .sort-pagination {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-width: 288px;
     margin-right: 230px;
 }
