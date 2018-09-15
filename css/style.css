@@ -300,9 +300,6 @@ ____________________________
     fill: #ffc600;
 }
 
-.logo-html {
-}
-
 /*Footer закончили, начинаемм main контейнер*/
 
 .best-items-slider p,
@@ -663,7 +660,8 @@ ____________________________
     opacity: 0.3;
 }
 
-.social-button:hover svg {
+.social-button:hover svg,
+.social-button:focus svg {
     opacity: 0.6;
 }
 
@@ -783,7 +781,11 @@ ____________________________
 .logo-item-dji:hover .logo-hidden-dji,
 .logo-item-sp:hover .logo-hidden-sp,
 .logo-item-gopro:hover .logo-hidden-gopro,
-.logo-item-vive:hover .logo-hidden-vive {
+.logo-item-vive:hover .logo-hidden-vive,
+.logo-item-dji:focus .logo-hidden-dji,
+.logo-item-sp:focus .logo-hidden-sp,
+.logo-item-gopro:focus .logo-hidden-gopro,
+.logo-item-vive:focus .logo-hidden-vive {
     visibility: visible;
 }
 
@@ -834,9 +836,6 @@ ____________________________
 
 
 /*-------------------------*/
-
-.main-header .main-navigation {
-}
 
 .best-items-slider {
     min-height: 486px;
@@ -1693,9 +1692,6 @@ a.map-button {
     width: 400px;        
 }
 
-.wrapper-phone-logo {
-}
-
 .login-link-footer a::before {
     content: "";
 
@@ -2036,6 +2032,7 @@ form.filter {
 }
 
 .catalog-button:hover ~ .subcatalog,
+.catalog-button:focus ~ .subcatalog,
 .catalog-button:active ~ .subcatalog  {
     z-index: 50;
 
@@ -2084,6 +2081,10 @@ ________________________________________________*/
     background-color: rgba(255, 255, 255, 0.3);
 
     cursor: pointer;
+}
+
+.mask-of-item + a {
+    display: block; 
 }
 
 .button-basket {
@@ -2455,7 +2456,8 @@ input:disabled ~ label {
     cursor: pointer;
 }
 
-.toggle:hover {
+.toggle:hover,
+.toggle:focus {
     width: 5px;
     height: 5px;
 }
@@ -2584,7 +2586,11 @@ input:disabled ~ label {
     border: 1px solid black;    
     border-radius: 50%;
 
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+        -ms-transform: translate(-50%, -50%);
+
+            transform: translate(-50%, -50%);
 } 
 
 #product-1:checked ~ .slider-controls label[for="product-1"]::before,
@@ -2602,7 +2608,11 @@ input:disabled ~ label {
     border: 1px solid black;    
     border-radius: 50%;
 
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+        -ms-transform: translate(-50%, -50%);
+
+            transform: translate(-50%, -50%);
 }  
 
 #product-1:checked ~ .container-best-slider-selfie,
@@ -2800,9 +2810,6 @@ ______________________________________________*/
     width: 196px;
 }
 
-.user-navigation-index .search {
-}
-
 .container-wrapper .wrapper-title {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2886,7 +2893,8 @@ ______________________________________________*/
     width: 60px;
     margin: 0;
     padding-top: 17px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     font-family: "gilroyextrabold", "Arial black", sans-serif;
     font-size: 14px;
@@ -2905,7 +2913,8 @@ ______________________________________________*/
     color: rgba(255, 255, 255, 0.6);
 }
 
-.user-navigation-footer a:hover {
+.user-navigation-footer a:hover,
+.user-navigation-footer a:focus {
     color: rgba(255, 255, 255, 1);
 }
 
