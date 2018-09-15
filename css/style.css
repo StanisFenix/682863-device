@@ -449,6 +449,8 @@ ____________________________
 
     background-color: rgba(242, 242, 242, 0.5);
     border: none;
+
+    outline-color: #f0c52e;
 }
 
 .footer-social li {
@@ -2357,6 +2359,12 @@ ________________________________________
     background-repeat: no-repeat;
 }
 
+.filter-option label:hover::after,
+.filter-option label:hover::before {
+    opacity: 0.6;
+}
+
+
 .filter-input-checkbox:checked ~ label::after {
     content: "";
 
@@ -2442,6 +2450,11 @@ ________________________________________
             box-shadow: 0 2px 1px 0 #cfcfcf;
 
     cursor: pointer;
+}
+
+.toggle:hover {
+    width: 5px;
+    height: 5px;
 }
 
 .range-controls .toggle-min {
@@ -2768,11 +2781,6 @@ ______________________________________________*/
     list-style-type: none;
 }
 
-.buy-footer li,
-.user-navigation-footer li {
-    opacity: 0.7;
-}
-
 .buy-footer li:hover,
 .user-navigation-footer li:hover,
 .buy-footer li:hover:focus,
@@ -2888,4 +2896,17 @@ ______________________________________________*/
     
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+}
+
+.user-navigation-footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-navigation-footer a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.user-navigation-footer a:hover::before,
+.user-navigation-footer a:focus::before {
+    opacity: 0.6;
 }
