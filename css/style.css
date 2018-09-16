@@ -1289,7 +1289,7 @@ _____________________________________*/
     z-index: 10;
 }
 
-.fitness-bracellet-slide {
+.fitness-bracelet-slide {
     margin-left: -30px;
     margin-right: 69px;
 }
@@ -2369,7 +2369,7 @@ input:disabled ~ label {
     opacity: 0.25;
 }
 
-.filter-input-checkbox:checked ~ label::after {
+.filter-input-checkbox:checked ~ label::before {
     content: "";
 
     position: absolute;
