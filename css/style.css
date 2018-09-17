@@ -2883,7 +2883,7 @@ ______________________________________________*/
     margin-right: 230px;
 }
 
-.catalog-item:last-of-type::after {
+.new-model::after {
     content: "New";
 
     position: absolute;
