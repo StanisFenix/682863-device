@@ -2883,7 +2883,9 @@ ______________________________________________*/
     margin-right: 230px;
 }
 
-.new-model {
+.catalog-item:last-of-type::after {
+    content: "New";
+
     position: absolute;
     top: 29px;
     right:26px;
@@ -2921,4 +2923,12 @@ ______________________________________________*/
 .user-navigation-footer a:hover::before,
 .user-navigation-footer a:focus::before {
     opacity: 0.6;
+}
+
+.phone {
+    font-family:"open-sanslight","Arial",sans-serif;
+    font-size:15px;
+    line-height:30px;
+    color:#ffffff;
+    text-decoration:none;
 }
